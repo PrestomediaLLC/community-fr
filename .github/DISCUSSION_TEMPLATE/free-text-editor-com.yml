@@ -1,0 +1,26 @@
+title: "[free-text-editor.com] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bienvenue ! Utilisez ce formulaire pour poser des questions, suggérer des fonctionnalités ou partager des commentaires sur **free-text-editor.com**. Veuillez ne pas partager de données personnelles privées.
+  - type: dropdown
+    id: topic-type
+    attributes:
+      label: "Que souhaitez-vous faire ?"
+      options:
+        - "Poser une question générale"
+        - "Obtenir de l'aide pour un problème / bug"
+        - "Suggérer une nouvelle fonctionnalité ou amélioration"
+        - "Autre / Commentaires généraux"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Votre message
+      description: Décrivez votre question, problème ou idée en détail.
+      placeholder: Écrivez votre message ici...
+    validations:
+      required: true
